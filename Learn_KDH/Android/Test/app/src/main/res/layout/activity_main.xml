@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:andorid="http://schemas.android.com/apk/res/android"
+    andorid:layout_height="match_parent"
+    andorid:layout_width="match_parent"
+    andorid:orientation="vertical">
+
+    <Button
+        andorid:layout_width="wrap_content"
+        andorid:layout_height="wrap_content"
+        andorid:text="통신 시작"
+        andorid:id="@+id/button"/>
+
+    <TextView
+        andorid:layout_width="wrap_content"
+        andorid:layout_height="wrap_content"
+        andorid:id="@+id/textView"/>
+
+
+</LinearLayout>
