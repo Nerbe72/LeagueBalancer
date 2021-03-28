@@ -1,5 +1,5 @@
 # LeagueBalancer
-5v5 League of legend team balance
+##5v5 League of legend team balance
 
 1. 개인 코딩은 Learn_이니셜 디렉토리 내에 할 것.
 2. 깃허브 내 자바 워크스페이스 기준으로 돌아가게 할 것.
