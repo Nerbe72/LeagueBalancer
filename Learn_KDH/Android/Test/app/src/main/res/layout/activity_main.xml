@@ -7,13 +7,31 @@
     <Button
         andorid:layout_width="wrap_content"
         andorid:layout_height="wrap_content"
-        andorid:text="통신 시작"
-        andorid:id="@+id/button"/>
+        andorid:text="연결하기"
+        andorid:id="@+id/connectButton"
+        andorid:onClick="ClientSocketOpen"/>
+
+    <Button
+        andorid:layout_width="wrap_content"
+        andorid:layout_height="wrap_content"
+        andorid:text="보내기"
+        andorid:id="@+id/sendButton"
+        andorid:onClick="SendMessage"/>
 
     <TextView
         andorid:layout_width="wrap_content"
         andorid:layout_height="wrap_content"
-        andorid:id="@+id/textView"/>
+        andorid:id="@+id/RecvView"/>
+
+    <TextView
+        andorid:layout_width="wrap_content"
+        andorid:layout_height="wrap_content"
+        andorid:id="@+id/SendView"/>
+
+    <EditText
+        andorid:layout_width="match_parent"
+        andorid:layout_height="wrap_content"
+        andorid:id="@+id/editText"/>
 
 
 </LinearLayout>
