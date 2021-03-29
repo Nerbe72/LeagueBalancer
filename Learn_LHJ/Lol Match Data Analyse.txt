@@ -3,7 +3,8 @@
 accountId로부터 GameId 획득
 각 GameId로부터 GameInfo 획득
 GameInfo를 통해...
-소환사 ID  -> 최근 20게임의
+소환사 ID  -> 최근 30게임 중 lane=None 인 경우 제거
+get
 		챔피언
 		킬 데스 어시
 		와드수
@@ -13,10 +14,37 @@ GameInfo를 통해...
 		더블킬 이상 성공
 		가한 데미지량
 		받은 데미지량
-
+##############################################################
 queue = 
 420 솔랭
 430 일겜
 440 자유랭 5:5
 450 칼바람
 900 URF
+##############################################################
+(K + A) / D    3.0 이상 -> 1인분
+
+kda / 3 이후 더함 을 count로 나눔 -> 가중치?
+                                                   결과..x
+결과 : 가중치 * 티어 * 500
+
+아       10
+브       100
+실       100
+골 3-4  100
+    1-2  200
+플        300
+다        400
+마        400
+그마     500
+챌        600
+잘하는 브론즈 = 못하는 골드
+##############################################################
+headers = {
+    "Origin": "https://developer.riotgames.com",
+    "Accept-Charset": "application/x-www-form-urlencoded; charset=UTF-8",
+    "X-Riot-Token": DEVELOPMENTAPIKEY,
+    "Accept-Language": "ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36"
+}
+res = requests.get(url, headers=headers)
