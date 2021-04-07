@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#2E2F32">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:background="#191C20"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:text="리그오브레전드 팀 배치에 오신걸 환영합니다."
+        android:textSize="20dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:background="#191C20"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:text="닉네임을 입력하세요"
+        android:textSize="40dp" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="25dp"
+        android:columnCount="2"
+        android:orientation="horizontal"
+        android:rowCount="5" >
+
+        <EditText
+            android:id="@+id/nickName0"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FFFFFF"
+            android:textSize="14dp" />
+
+        <EditText
+            android:id="@+id/nickName1"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FFFFFF"
+            android:textSize="14dp" />
+
+        <EditText
+            android:id="@+id/nickName2"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FFFFFF"
+            android:textSize="14dp" />
+
+        <EditText
+            android:id="@+id/nickName3"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FFFFFF"
+            android:textSize="14dp" />
+
+        <EditText
+            android:id="@+id/nickName4"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FFFFFF"
+            android:textSize="14dp" />
+
+        <EditText
+            android:id="@+id/nickName5"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FFFFFF"
+            android:textSize="14dp" />
+
+        <EditText
+            android:id="@+id/nickName6"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FFFFFF"
+            android:textSize="14dp" />
+
+        <EditText
+            android:id="@+id/nickName7"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FFFFFF"
+            android:textSize="14dp" />
+
+        <EditText
+            android:id="@+id/nickName8"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FFFFFF"
+            android:textSize="14dp" />
+
+        <EditText
+            android:id="@+id/nickName9"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FFFFFF"
+            android:textSize="14dp" />
+    </GridLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:id="@+id/connectServerBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="소켓 연결"
+            android:textSize="30dp"
+            android:backgroundTint="#0088CC"
+            android:textColor="#FFFFFF"
+            android:onClick="ConnectServer"/>
+        <Button
+            android:id="@+id/makeTeamBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="팀 만들기"
+            android:textSize="30dp"
+            android:backgroundTint="#0088CC"
+            android:textColor="#FFFFFF"
+            android:onClick="MakeTeam"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/connectionStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:text="서버와의 연결상태: 연결안됨"/>
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:text="결과: "/>
+</LinearLayout>
