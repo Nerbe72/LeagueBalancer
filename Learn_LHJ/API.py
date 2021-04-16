@@ -11,7 +11,7 @@ def set_url(query, req, option=''):
     return assembled
 
 
-api_key = "RGAPI-fa88326b-e677-4dfa-b709-8417329ea2df"
+api_key = "이 부분에 api입력"
 
 name = input("소환사명 : ")
 season = str(13)
